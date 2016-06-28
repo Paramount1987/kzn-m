@@ -1,0 +1,96 @@
+//
+// Navs
+// --------------------------------------------------
+// Base class
+// --------------------------------------------------
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  > li {
+    position: relative;
+    display: block;
+
+    > a {
+      position: relative;
+      display: block;
+      padding: 13px 10px;
+      text-align: center;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: #ccc;
+      }
+    }
+
+  }
+
+  // Open dropdowns
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: blue;
+      border-color: #000;
+    }
+  }
+}
+
+// Tabs
+// -------------------------
+
+// Give the tabs something to sit on
+.nav-tabs {
+  display: table;
+  width: 100%;
+  > li:first-child{
+    padding-left: 0;
+  }
+  > li {
+    display: table-cell;
+    padding-left: 1px;
+    // Actual tabs (as links)
+    > a {
+      color:#6b6464;
+      text-decoration: none;
+      background: #e5e5e6;
+      font-size: 13px;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background: #8554a9;
+        color:#fff;
+        cursor: default;
+      }
+    }
+  }
+}
+
+
+
+// Tabbable tabs
+// -------------------------
+.tab-content {
+  padding: 10px;
+  box-shadow: 0px 3px 14px -6px rgba(0,0,0,0.75);
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+.tab-content--event{
+  padding: 0;
+}
+
+.tab-content--margin{
+  margin: 0 10px;
+}

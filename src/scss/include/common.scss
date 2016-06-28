@@ -1,0 +1,41 @@
+.free-mark{
+  display: block;
+  width: 85px;
+  line-height: 22px;
+  background: $orange;
+  border-radius: 2px;
+  color:#fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.btn-link{
+  display: block;
+  margin:5px 0;
+  line-height: 45px;
+  border: 2px solid $gray;
+  text-align: center;
+  color:#6b6464;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.btn-default{
+  display: block;
+  line-height: 50px;
+  background: #ceced0;
+  text-align: center;
+  border:0;
+  outline: 0;
+  font-size: 14px;
+}
+.btn-violet{
+  background: $violet;
+  color:#fff;
+}
+
+.bg-white{
+  background: #fff;
+}
