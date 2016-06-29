@@ -42,12 +42,21 @@
 
 .full-place__body{
   padding-bottom: 10px;
+  .ticket-buy{
+    position: absolute;
+    z-index: 5;
+    top:10px;
+    right:10px;
+  }
 }
 
 .full-place__footer{
   padding-top: 15px;
   border-top: 1px solid $gray;
   font-size: 12px;
+}
+.full-place__footer--no-border{
+  border-top:0;
 }
 .full-place-link{
   color: $orange;
@@ -61,6 +70,11 @@
     font-size: 13px;
   }
 }
+.full-place-info--border{
+  border-bottom: 1px solid $gray;
+  padding-bottom: 8px;
+}
+
 .full-place-title{
   margin:5px 0;
   font-size: 20px;

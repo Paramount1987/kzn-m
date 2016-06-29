@@ -1,7 +1,8 @@
 .ajax-content{
   position: relative;
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
   padding: 10px;
+  box-shadow: 0px 1px 14px -6px rgba(0,0,0,0.75);
   .i-filter{
     position: absolute;
     z-index: 3;
@@ -49,5 +50,12 @@
         cursor: default;
       }
     }
+  }
+}
+
+.ajax-tabs--double{
+  margin: 0 0 0 -0.3%;
+  li{
+    width: 49.7%;
   }
 }

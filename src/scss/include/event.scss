@@ -168,3 +168,31 @@
 .place-info__title{
   font-weight: bold;
 }
+//------------------------------------------
+.event-short--page{
+  .event-short__top{
+    padding: 5px 5px 0 5px;
+  }
+  .event-info{
+    font-size: 12px;
+  }
+  .free-mark{
+    position: relative;
+    width: 75px;
+    margin: -5px 0 3px -5px;
+  }
+}
+
+.full-place--event .full-place__body{
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left:0;
+    right:0;
+    height: 80px;
+    @include gradient-vertical($start-color: rgba(0,0,0,.75), $end-color: rgba(0,0,0,0), $start-percent: 0%, $end-percent: 100%);
+  }
+}
