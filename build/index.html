@@ -6,30 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1, user-scalable=no">
     <title>Test</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        #kzn-preloader{
+            position: fixed;
+            z-index: 100;
+            top:0;
+            left:0;
+            right:0;
+            bottom: 0;
+            background: #fff;
+        }
+    </style>
 </head>
 <body>
+    <div id="kzn-preloader"></div>
     <div class="wrapper">
         <header>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-4">
-                        Menu
+                        <a href="#" class="btn-menu"><i></i><i></i><i></i></a>
                     </div>
                     <div class="col-xs-4">
                         Logo
                     </div>
-                    <div class="col-xs-4">
-                        search
+                    <div class="col-xs-4 text-right">
+                        <a href="#" class="btn-search">search</a>
                     </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-list list-default">
+                    <li><a href="films.html" class="nav-link">Кино</a></li>
+                    <li><a href="events.html" class="nav-link">События</a></li>
+                    <li><a href="places.html" class="nav-link">Места</a></li>
+                    <li><a href="interests.html" class="nav-link">Интересное</a></li>
+                    <li><a href="with-child.html" class="nav-link">С детьми</a></li>
+                    <li><a href="with-child2.html" class="nav-link">Популярное</a></li>
+                    <li><a href="news.html" class="nav-link">Новости</a></li>
+                </ul>
+                <a href="#" class="btn-nav-close icon-cancel"></a>
+            </nav>
+            <div class="nav-backdrop"></div>
+            <div class="search-group">
+                <div class="search-control clearfix">
+                    <i class="icon-cancel"></i>
+                    <input type="text" class="search-input pull-left"/>
+                    <a href="#" class="search-group__btn pull-right  js-close-search">Отмена</a>
                 </div>
             </div>
         </header>
         <div class="content">
             <div class="stuff-item">
-                <h3 class="stuff-title">Кино</h3>
+                <h3 class="stuff-title color-w">Кино</h3>
                 <div class="stuff-tab">
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs nav-tabs--pr">
                         <li class="active"><a href="#nearly-film" data-toggle="tab">В ближайший час</a></li>
                         <li><a href="#today-film" data-toggle="tab">Сегодня</a></li>
                         <li><a href="#tomorrow-film" data-toggle="tab">Завтра</a></li>
@@ -114,7 +146,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">Концерт самой крутой группы в мире "Brainstorm"</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +240,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">XYMO Chailhona & Lounge cafe</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +321,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">Новогодние приключения Буратино</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +397,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">Концерт Павла Воли</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -434,7 +466,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">Где покататься на коньках</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -510,7 +542,7 @@
                                     <img src="img/images/event1.jpg" alt="" class="event-poster"/>
                                     <div class="event-footer">
                                         <div class="event-title">Межгалактическое Путешествие в Новогоднюю ночь</div>
-                                        <a href="#" class="event-link">Подробнее</a>
+                                        <a href="#" class="event-link icon-right-small">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -591,11 +623,11 @@
                         </ul>
                     </div>
                     <div class="col-xs-4">
-                        <p class="footer-link-title">Следите за нами</p>
+                        <p class="footer-link-title text-center">Следите за нами</p>
                         <ul class="list-default footer-list text-center">
-                            <li><a href="#">fb</a></li>
-                            <li><a href="#">tw</a></li>
-                            <li><a href="#">vk</a></li>
+                            <li><a href="#" class="i-social icon-facebook"></a></li>
+                            <li><a href="#" class="i-social icon-twitter"></a></li>
+                            <li><a href="#" class="i-social icon-vk"></a></li>
                         </ul>
                     </div>
                 </div>

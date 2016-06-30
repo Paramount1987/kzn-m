@@ -1,6 +1,13 @@
 .content{
-  padding: 0 10px;
+  padding: 50px 10px 0 10px;
+  background: url('../img/images/header-bg.jpg') top center repeat-x;
 }
 .content--padding{
-  padding: 0;
+  padding: 50px 0 0 0;
+}
+
+.content--child{
+  background-image: url('../img/images/giraffe.png'), url('../img/images/header-bg.jpg');
+  background-position: right 20px, top center;
+  background-repeat: no-repeat, repeat-x;
 }

@@ -65,6 +65,11 @@
   bottom: 0;
   color: $orange;
   text-decoration: none;
+  &:after{
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 19px;
+  }
 }
 
 .event-item .event-inner .free-mark{

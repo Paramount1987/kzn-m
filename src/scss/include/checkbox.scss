@@ -1,0 +1,46 @@
+.checkbox-item{
+  position: relative;
+}
+.checkbox-item input{
+  position: absolute;
+  z-index: 10;
+  top:0;
+  left:0;
+  width: 17px;
+  height: 17px;
+  -webkit-appearance: none;
+  @include opacity(0);
+}
+.checkbox-item label{
+  position: relative;
+  padding: 0 0 0 35px;
+  &:after{
+      content: "";
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border: 1px solid $gray;
+
+  }
+}
+
+.checkbox-item input:checked + label:after{
+  content: '\e806';
+  border-color:#000;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 11px;
+  line-height: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
