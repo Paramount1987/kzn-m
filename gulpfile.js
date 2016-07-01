@@ -88,7 +88,7 @@ gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions', '> 5%'],
+      browsers: ['last 10 versions', '> 5%'],
       cascade: false }))
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.reload({stream: true}));
