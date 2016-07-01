@@ -49,11 +49,13 @@ nav{
   left:0;
   right: 0;
   bottom: 0;
+  display: none;
   background: rgba(46,43,53,.1);
   transition: opacity .2s ease-out;
   @include opacity(0);
 }
 nav.open + .nav-backdrop{
+  display: block;
   z-index: 10;
   @include opacity(1);
 }
