@@ -10,8 +10,30 @@ var sass = require('gulp-sass'),
     spritesmith = require('gulp.spritesmith'),
     browserify = require('gulp-browserify'),
     imagemin = require('gulp-imagemin'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+   svgSprite = require('gulp-svg-sprite');
 
+
+//svg sprite
+config					= {
+  mode				: {
+    view			: {			// Activate the «view» mode
+      bust		: false,
+      render		: {
+        scss	: true		// Activate Sass output (with default options)
+      }
+    }
+  }
+};
+
+gulp.task('sprite-svg', function(){
+  gulp.src('src/img/sprites/svg/*.svg')
+     .pipe(svgSprite( config ))
+        .on('error',function(error){
+          console.log(error);
+        })
+     .pipe(gulp.dest('src/img/images'));
+});
 //sprites
 gulp.task('sprite', function () {
   var spriteData = gulp.src('./src/img/sprites/*.png').pipe(spritesmith({

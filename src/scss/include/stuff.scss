@@ -9,3 +9,32 @@
 .stuff-title--padding{
   padding: 0 10px;
 }
+
+.stuff-tab--double{
+  font-size: 0;
+  .stuff-tab__link{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 50px;
+    background: #f6f6f7;
+    border: 1px solid #e5e5e6;
+    text-align: center;
+    color:#999;
+    font: bold 16px/50px 'PT Sans', sans-serif;
+    text-decoration: none;
+    &.active{
+      background: #e5e5e6;
+      border: 1px solid #ceced0;
+      color:#6b6464;
+    }
+    .svg-sprite{
+      position: relative;
+      top:5px;
+      vertical-align: top;
+    }
+    .svg-glass{
+      top:10px;
+    }
+  }
+}

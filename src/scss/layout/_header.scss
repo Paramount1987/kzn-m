@@ -8,6 +8,14 @@ header{
   background: rgba(46,43,53,.8);
   padding: 0 10px;
   color: $gray;
+  .svg-search{
+    position: relative;
+    top:6px;
+  }
+  .kzn-logo{
+    position: relative;
+    top:5px;
+  }
 }
 
 .btn-menu{
@@ -25,6 +33,13 @@ header{
 .btn-search{
   color:$gray;
   text-decoration: none;
+}
+
+.kzn-logo{
+  display: inline-block;
+  background: url("../img/images/logo.png") no-repeat;
+  width: 74px;
+  height: 35px;
 }
 
 nav{
@@ -72,13 +87,21 @@ nav.open + .nav-backdrop{
     padding-left: 10px;
     border-bottom: 1px solid #6c647c;
   }
+  .svg-sprite{
+    position: relative;
+    top:4px;
+    margin-right: 15px;
+  }
 }
 
 .nav-link{
-  display: inline-block;
+  display: block;
   font: normal 18px/50px 'PT Sans', sans-serif;
   color:#f8f8f8;
   text-decoration: none;
+}
+.svg-sprite{
+  display: inline-block;
 }
 
 .btn-nav-close{

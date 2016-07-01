@@ -1,0 +1,164 @@
+%svg-common {
+  background: url("../img/images/sprite.view.svg") no-repeat;
+}
+
+.svg-arrow-r {
+  @extend %svg-common;
+  background-position: 22.434782608695652% 68.4536082474227%;
+}
+
+.svg-arrow-r-dims {
+  width: 20px;
+  height: 12px;
+}
+
+.svg-calendar-w {
+  @extend %svg-common;
+  background-position: 29.09090909090909% 43.27272727272728%;
+}
+
+.svg-calendar-w-dims {
+  width: 30.5px;
+  height: 26.5px;
+}
+
+.svg-cubes {
+  @extend %svg-common;
+  background-position: 0 45.59386973180077%;
+}
+
+.svg-cubes-dims {
+  width: 30.4px;
+  height: 30.7px;
+}
+
+.svg-eye-w {
+  @extend %svg-common;
+  background-position: 0 74.52300785634121%;
+}
+
+.svg-eye-w-dims {
+  width: 25.8px;
+  height: 19.9px;
+}
+
+.svg-face {
+  @extend %svg-common;
+  background-position: 19.469026548672566% 96.96629213483148%;
+}
+
+.svg-face-dims {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-face-g {
+  @extend %svg-common;
+  background-position: 0 0;
+}
+
+.svg-face-g-dims {
+  width: 32.7px;
+  height: 35.7px;
+}
+
+.svg-film {
+  @extend %svg-common;
+  background-position: 0 99.1954022988506%;
+}
+
+.svg-film-dims {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-flag {
+  @extend %svg-common;
+  background-position: 53.89380530973451% 40.112359550561806%;
+}
+
+.svg-flag-dims {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-flatware {
+  @extend %svg-common;
+  background-position: 28.96368467670505% 0;
+}
+
+.svg-flatware-dims {
+  width: 22.1px;
+  height: 30.7px;
+}
+
+.svg-glass {
+  @extend %svg-common;
+  background-position: 80.28708133971291% 0;
+}
+
+.svg-glass-dims {
+  width: 30.5px;
+  height: 26.5px;
+}
+
+.svg-map {
+  @extend %svg-common;
+  background-position: 38.93805309734513% 96.96629213483148%;
+}
+
+.svg-map-dims {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-map2 {
+  @extend %svg-common;
+  background-position: 51.74693106704438% 0;
+}
+
+.svg-map2-dims {
+  width: 29.1px;
+  height: 30.7px;
+}
+
+.svg-search {
+  @extend %svg-common;
+  background-position: 79.9047619047619% 33.54430379746835%;
+}
+
+.svg-search-dims {
+  width: 30px;
+  height: 30px;
+}
+
+.svg-star {
+  @extend %svg-common;
+  background-position: 58.4070796460177% 96.96629213483148%;
+}
+
+.svg-star-dims {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-stick {
+  @extend %svg-common;
+  background-position: 77.87610619469027% 96.96629213483148%;
+}
+
+.svg-stick-dims {
+  width: 22px;
+  height: 20px;
+}
+
+.svg-voice {
+  @extend %svg-common;
+  background-position: 99.47826086956522% 0;
+}
+
+.svg-voice-dims {
+  width: 20px;
+  height: 20px;
+}
+
