@@ -84,6 +84,10 @@
   background: #fff;
   padding: 10px;
 }
+.list-flexbox--height{
+  height: auto;
+  max-height: 320px;
+}
 .list-event--flexbox{
   display: flex;
   flex-direction: column;
