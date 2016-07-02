@@ -25,6 +25,7 @@ footer{
 }
 
 .i-social{
+  position:relative;
   display: block;
   width: 34px;
   height: 34px;
@@ -34,8 +35,12 @@ footer{
   @include gradient-horizontal($start-color: $violet, $end-color: $orange, $start-percent: 0%, $end-percent: 100%);
 }
 .i-social.icon-facebook{
+  top:-5px;
   font-size: 20px;
 }
 .i-social.icon-vk{
   font-size: 15px;
+}
+.i-social.icon-twitter{
+  top:-3px;
 }

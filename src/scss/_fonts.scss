@@ -70,6 +70,7 @@
 
 
 .i-comment{
+  font-size:12px;
   margin-right: 7px;
 }
 .i-comment:before{
@@ -77,6 +78,9 @@
   font-size: 15px;
   margin-right: 4px;
   color:#707070;
+}
+.i-preview{
+  font-size:12px;
 }
 .i-preview:before,
 .i-view:before{
@@ -91,4 +95,31 @@
 .event-short__top .i-preview:before{
   color:#fff;
   font-size: 14px;
+}
+
+.i-view-w{
+  position:relative;
+  padding-left:28px;
+}
+.i-view-w:before{
+  content:'';
+  position: absolute;
+  top:-2px;
+  left:0;
+  display:block;
+  width: 25.8px;
+  height: 19.9px;
+  background: url("../img/images/sprite.view.svg") no-repeat;
+  background-position: 0 74.52300785634121%;
+}
+.i-filter{
+  display:inline-block;
+  width:35px;
+  height:24px;
+  background:url("../img/icons/filter.png") no-repeat;
+}
+.svg-cash{
+  width:27px;
+  height:17px;
+  background:url("../img/icons/cash.png") no-repeat;
 }

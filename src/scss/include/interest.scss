@@ -35,7 +35,7 @@
 .full-place{
   margin-bottom: 10px;
   background: #fff;
-  padding: 10px;
+  padding: 2px 10px 10px 10px;
   font-family: 'PT Sans', sans-serif;
   box-shadow: 0px 1px 14px -6px rgba(0,0,0,0.75);
 }
@@ -55,6 +55,9 @@
   border-top: 1px solid $gray;
   font-size: 12px;
 }
+.full-place__footer--no-padding{
+  padding-top:0;
+}
 .full-place__footer--no-border{
   border-top:0;
 }
@@ -69,6 +72,9 @@
   b{
     font-size: 13px;
   }
+  .font-size-12{
+    margin:3px 0;
+  }
 }
 .full-place-info--border{
   border-bottom: 1px solid $gray;
@@ -76,10 +82,11 @@
 }
 
 .full-place-title{
-  margin:5px 0;
-  font-size: 20px;
-  font-weight: normal;
-  color:$brown;
+  margin:5px 0 5px 0;
+  font-size:20px;
+  line-height:20px;
+  color:#6b6464;
+  font-weight:normal;
   small{
     font-size: 13px;
   }
@@ -87,7 +94,7 @@
 
 .full-place-img{
   display: block;
-  margin: 10px 0;
+  margin: 5px 0 10px 0;
   width: 100%;
 }
 .full-place-text{

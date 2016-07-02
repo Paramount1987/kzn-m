@@ -3,9 +3,33 @@
 }
 
 .filter-header{
-  padding: 0 15px;
+  position:relative;
+  padding: 0 15px 0 50px;
   background: #efeff0;
-  line-height: 30px;
+  line-height: 34px;
+  .svg-sprite{
+    position:absolute;
+    z-index:1;
+    top:2px;;
+    left:15px;;
+  }
+  .svg-cash{
+    top:9px;
+    left:11px;
+  }
+  .svg-map2{
+    left:11px;
+  }
+  .svg-cubes{
+    top:3px;
+    left:9px;
+  }
+  .icon-clock{
+    top:0;
+    left:13px;
+    font-size:25px;
+    color:#6b6464;
+  }
 }
 
 .filter-body{

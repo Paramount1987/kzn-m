@@ -43,7 +43,7 @@
     vertical-align: top;
   }
   .svg-map{
-    margin: -2px 9px 0 4px;
+    margin: -2px 10px 0 3px;
   }
   .svg-calendar-w{
     margin-top: -6px;
@@ -145,10 +145,13 @@
   left:0;
   width: 100%;
   height: 30px;
-  padding: 10px 10px 0 10px;
+  padding: 7px 10px 0 10px;
   color:#fff;
   font-size: 12px;
   font-family: 'PT Sans', sans-serif;
+  .event-info{
+    font-size:12px;
+  }
 }
 
 .event-short-poster{

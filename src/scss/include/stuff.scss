@@ -3,8 +3,12 @@
 }
 
 .stuff-title{
-  margin: 0;
+  margin: 5px 0 4px 0;
   font: normal 30px/35px 'PT Sans', sans-serif;
+  color:#6b6464;
+  &.color-w{
+    color:#fff;
+  }
 }
 .stuff-title--padding{
   padding: 0 10px;
